@@ -50,5 +50,16 @@ namespace Experiment
         {
 
         }
+
+        
+        private void Slider_ValueChanged_1(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = smallSlider.Value.ToString("0");
+        }
+
+        private void bigSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = bigSlider.Value.ToString("000-000-0000");
+        }
     }
 }

@@ -39,13 +39,15 @@
             <ListBoxItem Content="4"/>
             <ListBoxItem Content="5"/>
         </ComboBox>
-        <ComboBox x:Name="editableComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="275,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="editableComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="275,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True">
             <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
             <ListBoxItem Content="4"/>
             <ListBoxItem Content="5"/>
         </ComboBox>
+        <Slider x:Name="smallSlider" Width="120" Grid.Column="1" Margin="10,10,275,110" Grid.Row="2" AutoToolTipPlacement="TopLeft" Maximum="5" Minimum="1" ValueChanged="Slider_ValueChanged_1"/>
+        <Slider x:Name="bigSlider" Width="120" Grid.Column="1" Margin="10,10,10,10" Grid.Row="2" Grid.ColumnSpan="2" AutoToolTipPlacement="TopLeft" Minimum="1111111111" Maximum="9999999999" Value="7183876962" ValueChanged="bigSlider_ValueChanged"/>
 
     </Grid>
 </Window>
